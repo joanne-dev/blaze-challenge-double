@@ -1,0 +1,26 @@
+
+confetti.png
+size: 1794,1041
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+confetti_A
+  rotate: false
+  xy: 2, 2
+  size: 1790, 1037
+  orig: 1792, 1039
+  offset: 1, 1
+  index: -1
+
+confetti2.png
+size: 1849,1051
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+confetti_B
+  rotate: false
+  xy: 2, 2
+  size: 1845, 1047
+  orig: 1864, 1049
+  offset: 1, 1
+  index: -1

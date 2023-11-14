@@ -1,0 +1,16 @@
+﻿{
+  "align": "center",
+  "dropShadow": true,
+  "dropShadowAlpha": 0.9,
+  "dropShadowAngle": 1.7,
+  "dropShadowColor": "#1f0000",
+  "dropShadowDistance": 3,
+  "fill": ["#ffde66", "#ffa947"],
+  "fillGradientStops": [0.4],
+  "fontFamily": "SofiaPro-Black",
+  "fontSize": 36,
+  "miterLimit": 18,
+  "stroke": "#ff2600",
+  "strokeThickness": 2,
+  "whiteSpace": "normal"
+}
