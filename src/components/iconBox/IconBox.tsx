@@ -22,20 +22,6 @@ const Icon = ({ type }: { type: IconTypes }) => {
       return <IconUserStyled />
     case 'currency':
       return <IconCurrencyStyled />
-    case 'favorite':
-      return <IconUserStyled />
-    case 'share':
-      return <IconUserStyled />
-    case 'sound-mute':
-      return <IconUserStyled />
-    case 'reload':
-      return <IconUserStyled />
-    case 'info':
-      return <IconUserStyled />
-    case 'stats':
-      return <IconUserStyled />
-    case 'fullscreen':
-      return <IconUserStyled />
     default:
       return <IconUserStyled />
   }

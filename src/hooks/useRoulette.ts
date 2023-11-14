@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { imagePaths } from '../utils/AssetsLoader.ts'
 import { useDispatch, useSelector } from 'react-redux'
-import { setState, states, validateIfUserHasWon } from '../store/bet.ts'
+import { setState, validateIfUserHasWon } from '../store/bet.ts'
 import { gsap } from 'gsap'
+import { states } from '../utils/enums/enums.ts'
 
 const betColors = ['blue', 'red', 'blue', 'red', 'blue', 'blue', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'yellow']
 export const useRoulette = () => {
@@ -22,7 +23,7 @@ export const useRoulette = () => {
 
   useEffect(() => {
     if (betState.state === states.ROLLING) {
-      startAnimation();
+      startAnimation()
     }
   }, [betState.state])
 

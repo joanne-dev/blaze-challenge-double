@@ -9,11 +9,10 @@ import {
   setBet2xAmount,
   setBetMoreHalfAmount,
   setBetType,
-  states,
   unblockBetButtons
 } from '../../store/bet.ts'
 import { useEffect } from 'react'
-import {Mode} from "../../utils/enums/enums.ts";
+import { Mode, states } from '../../utils/enums/enums.ts'
 export const BetSection = () => {
   const dispatch = useDispatch()
   const betSection = useSelector((state: any) => state.betState)
@@ -38,18 +37,8 @@ export const BetSection = () => {
             onClick={() => setMode(Mode.NORMAL)}
             className={betSection.betTypes.normal.className}
           />
-          <Button
-              type={'gameMode'}
-            text={Mode.AUTO}
-            onClick={() => setMode(Mode.AUTO)}
-            className={betSection.betTypes.auto.className}
-          />
-          <Button
-              type={'gameMode'}
-            text={Mode.FREE}
-            onClick={() => setMode(Mode.FREE)}
-            className={betSection.betTypes.free.className}
-          />
+          <Button type={'gameMode'} text={Mode.AUTO} onClick={() => setMode(Mode.AUTO)} className={betSection.betTypes.auto.className} />
+          <Button type={'gameMode'} text={Mode.FREE} onClick={() => setMode(Mode.FREE)} className={betSection.betTypes.free.className} />
         </div>
       </div>
       <div className={'amount-selector'}>
@@ -58,15 +47,8 @@ export const BetSection = () => {
           <span>$</span>
         </AmountStyled>
         <div className={'amount-buttons'}>
-          <Button
-           type={'amount'}
-            text={'½'}
-            onClick={() => dispatch(setBetMoreHalfAmount())}
-          />
-          <Button type={'amount'}
-            text={'2X'}
-            onClick={() => dispatch(setBet2xAmount())}
-          />
+          <Button type={'amount'} text={'½'} onClick={() => dispatch(setBetMoreHalfAmount())} />
+          <Button type={'amount'} text={'2X'} onClick={() => dispatch(setBet2xAmount())} />
         </div>
       </div>
       <div>
@@ -78,7 +60,7 @@ export const BetSection = () => {
 
         <div className={'bet-buttons'}>
           <BetButton
-              type={'betRed'}
+            type={'betRed'}
             text={'BET'}
             multiplier={'X2'}
             onClick={() => dispatch(activeRedButton())}

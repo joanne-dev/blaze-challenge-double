@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import {Mode, states} from "../utils/enums/enums.ts";
+import { Mode, states } from '../utils/enums/enums.ts'
 
 const betState = {
   state: states.WAITING,

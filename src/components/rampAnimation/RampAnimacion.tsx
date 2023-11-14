@@ -6,8 +6,9 @@ import BigWinText from '../bigWinText/BigWinText.tsx'
 import { BigWinTextStyled, RampAnimationStyled } from '../bigWinText/BigWinText.styled.ts'
 import { loadSpines } from '../../utils/spineLoader.ts'
 import { useDispatch } from 'react-redux'
-import { changeLoadingVisibility, changeRampAnimationVisibility, setState, states } from '../../store/bet.ts'
+import { changeLoadingVisibility, changeRampAnimationVisibility, setState } from '../../store/bet.ts'
 import { getColor } from '../../utils/pixiColor.ts'
+import { states } from '../../utils/enums/enums.ts'
 const RampAnimation = () => {
   const pixiAppRef = useRef<HTMLDivElement>(null)
   const dispatch = useDispatch()

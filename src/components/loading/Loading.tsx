@@ -1,7 +1,8 @@
 import { LoaderContainer, LoadingBar } from './Loading.styled.ts'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useRef } from 'react'
-import { changeLoadingVisibility, setRollingTime, setState, states } from '../../store/bet.ts'
+import { changeLoadingVisibility, setRollingTime, setState } from '../../store/bet.ts'
+import { states } from '../../utils/enums/enums.ts'
 
 export const Loading = () => {
   const dispatch = useDispatch()
