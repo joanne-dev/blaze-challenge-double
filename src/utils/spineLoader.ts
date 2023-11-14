@@ -36,8 +36,8 @@ export const loadSpines = async (app: PIXI.Application<PIXI.ICanvas>) => {
     app,
     spine: gameScreenAssets.ramp,
     animationName: 'mega_win_loop',
-    scale: 1,
-    position: [187.5, 300],
+    scale: 1.2,
+    position: [200, 300],
     loop: true
   })
 
